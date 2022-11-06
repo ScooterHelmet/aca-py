@@ -1,0 +1,3 @@
+[submodule "aries-cloudagent-python"]
+	path = aries-cloudagent-python
+	url = git@github.com:hyperledger/aries-cloudagent-python.git
