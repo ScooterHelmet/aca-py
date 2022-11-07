@@ -1,4 +1,4 @@
-name: Native Build & Test
+name: SUBMODULE UPDATE
 
 env:
   cacheId: "11" # increment to expire the cache
