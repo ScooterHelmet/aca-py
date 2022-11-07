@@ -16,4 +16,14 @@ on:
     branches: [main]
     paths:
       - aries-cloud-agent-python/**
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
 
+    # Watch for changes to the HEAD ref, use
+    # git for cache keys.
+    - name: Generate cache key
+        run: |
+          echo $(git rev-parse HEAD:aries-cloudagent-python/demo) > ./dd-cache-key.txt
