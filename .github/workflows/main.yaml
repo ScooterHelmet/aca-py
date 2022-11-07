@@ -23,9 +23,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: Pull & update submodules recursively
-        run: |
-          git submodule update --init --recursive
+      # - name: Pull & update submodules recursively
+        # run: |
+          # git submodule update --init --recursive
           
       # Watch for changes to the HEAD ref, use
       # git for cache keys.
